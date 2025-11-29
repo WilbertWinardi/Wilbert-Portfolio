@@ -135,14 +135,18 @@ export const HeroSection = () => {
               <ArrowDown className="size-4 group-hover:animate-bounce" />
             </button>
           </a>
-          <a href="#">
+          <a
+            href="/CVWilbert.pdf"
+            target="_blank"
+            rel="noopener noreferrer" 
+          >
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl group relative overflow-hidden hover:shadow-[0_0_25px_rgba(110,231,183,0.4)] hover:border-emerald-300 transition-all duration-300 active:scale-95">
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-300/10 via-emerald-300/20 to-emerald-300/30 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               <span className="inline-block group-hover:rotate-12 transition-transform duration-200 relative z-10">
                 ✨
               </span>
               <span className="font-semibold relative z-10">
-                Download CV Here
+                View CV Here
               </span>
             </button>
           </a>

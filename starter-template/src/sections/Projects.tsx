@@ -53,7 +53,6 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import { ProjectModal } from "@/components/ProjectModal";
 import { AnimatePresence } from "framer-motion";
-import { B612 } from "next/font/google";
 
 const portfolioProjects = [
   {
@@ -80,8 +79,22 @@ const portfolioProjects = [
       { title: "Highly customizable" },
       { title: "Easy to use" },
     ],
-    link: "https://github.com/claytonkoh/weather_app",
-    image: [WC_Cover, WC_1, WC_2, WC_3, WC_4, WC_5, WC_6, WC_7, WC_8, WC_9, WC_10, WC_11, WC_12],
+    link: "https://github.com/WilbertWinardi/weather_app",
+    image: [
+      WC_Cover,
+      WC_1,
+      WC_2,
+      WC_3,
+      WC_4,
+      WC_5,
+      WC_6,
+      WC_7,
+      WC_8,
+      WC_9,
+      WC_10,
+      WC_11,
+      WC_12,
+    ],
     description:
       "My team, consisting of Wilbert, Clayton, and Evan, created a real-time weather prediction website using machine learning classification. First, we collected data from the OpenWeatherMap API. Second, we were able to select which features to use for training. Third, we trained using random forest or logistic regression. Finally, we can make predictions using manual prediction (manual data input) or real-time prediction using data from the OpenWeatherMap API. This project is an assignment for the Machine Learning course in the fourth semester. We developed the logic using Python and the interface using Streamlit.",
     techStack: ["Python", "Streamlit", "Scikit-learn"],
@@ -126,7 +139,18 @@ const portfolioProjects = [
       { title: "Organizational Impact" },
     ],
     link: "https://www.linkedin.com/in/wilbertwinardi/",
-    image: [BNMC_Cover, BNMC_1, BNMC_2, BNMC_3, BNMC_4, BNMC_5, BNMC_6, BNMC_7, BNMC_8, BNMC_9],
+    image: [
+      BNMC_Cover,
+      BNMC_1,
+      BNMC_2,
+      BNMC_3,
+      BNMC_4,
+      BNMC_5,
+      BNMC_6,
+      BNMC_7,
+      BNMC_8,
+      BNMC_9,
+    ],
     description:
       "The BINUS Mandarin Club (BNMC) is a student activity unit that focuses on Chinese culture. I am a staff member in the education & learning department. Additionally, I am actively involved as an activist in various programs such as Staff FEST at the Anniversary event, Seminars, Expos, and Staff RS at the NMC event, and Coordinator CRF at the WP event. Through my experiences at BNMC, I have gained many new connections and enhanced my soft skills in communication, responsibility, and problem-solving.",
     techStack: [
