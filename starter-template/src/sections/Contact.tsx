@@ -19,14 +19,16 @@ export const ContactSection = () => {
               </h2>
               <p className="text-sm md:text-base mt-2">
                 Ready to bring your next project to life? Let's connect and
-                discuss. I can help you achiece your goals.{" "}
+                discuss. I can help you achieve your goals.{" "}
               </p>
             </div>
             <div>
-              <button className="text-white bg-gray-900 inline-flex items-center h-12 px-6 rounded-xl gap-2 w-max border border-gray-900">
-                <span className="font-semibold">Contact Me</span>
-                <ArrowUpRightIcon className="size-4" />
-              </button>
+              <a href="https://wa.me/6281717133233">
+                <button className="text-white bg-gray-900 inline-flex items-center h-12 px-6 rounded-xl gap-2 w-max border border-gray-900 hover:bg-gray-950 transition shadow-lg hover:shadow-xl translate-y-0 hover:scale-[.97] duration-200">
+                  <span className="font-semibold">Contact Me</span>
+                  <ArrowUpRightIcon className="size-4" />
+                </button>
+              </a>
             </div>
           </div>
         </div>

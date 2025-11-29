@@ -55,10 +55,12 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
 
   const [isHovered, setIsHovered] = useState(false);
   const [isManualPaused, setIsManualPaused] = useState(false);
-
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const images = Array.isArray(project?.image) ? project.image.slice(1) : [];
 
-  const images = project?.image || [];
+  useEffect(() => {
+    setPage([0, 0]);
+  }, [project?.image, project?.title]);
 
   const paginate = (newDirection: number) => {
     if (images.length === 0) return;
@@ -74,7 +76,7 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
     if (!isHovered && !isManualPaused && images.length > 1) {
       intervalRef.current = setInterval(() => {
         paginate(1);
-      }, 4000);
+      }, 3000);
     }
 
     return () => {
