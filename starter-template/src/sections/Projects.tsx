@@ -10,6 +10,7 @@ import ArrowRightUpIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 import { ProjectModal } from "@/components/ProjectModal"; // 3. Import Modal
+import { AnimatePresence } from "framer-motion";
 
 const portfolioProjects = [
   {
@@ -121,13 +122,15 @@ export const ProjectsSection = () => {
           ))}
         </div>
       </div>
-      {/* 7. Render Modal Jika ada project yang dipilih */}
-      {selectedProject && (
-        <ProjectModal
-          project={selectedProject}
-          onClose={() => setSelectedProject(null)}
-        />
-      )}
+      <AnimatePresence>
+        {selectedProject && (
+          <ProjectModal
+            key={selectedProject.title}
+            project={selectedProject}
+            onClose={() => setSelectedProject(null)}
+          />
+        )}
+      </AnimatePresence>
     </section>
   );
 };
