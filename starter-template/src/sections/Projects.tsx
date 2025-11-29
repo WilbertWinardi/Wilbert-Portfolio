@@ -1,3 +1,6 @@
+"use client"; // <--- 1. WAJIB: Tambahkan ini agar useState berfungsi
+
+import { useState } from "react"; // 2. Import useState
 import handSignInterpreterPage from "@/assets/images/hand-sign-interpreter.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
@@ -6,10 +9,11 @@ import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowRightUpIcon from "@/assets/icons/arrow-up-right.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
+import { ProjectModal } from "@/components/ProjectModal"; // 3. Import Modal
 
 const portfolioProjects = [
   {
-    company: "Hand Sign Interpreter",
+    company: "BINUS University",
     year: "2025",
     title: "Hand Sign Interpreter",
     results: [
@@ -18,10 +22,13 @@ const portfolioProjects = [
       { title: "SIBI static gestures" },
     ],
     link: "https://youtu.be/4k7IdSLxh6w",
-    image: handSignInterpreterPage,
+    image: [handSignInterpreterPage, lightSaasLandingPage],
+    description:
+      "Sebuah aplikasi penerjemah bahasa isyarat SIBI yang menggunakan Computer Vision dan Deep Learning. Aplikasi ini membantu menjembatani komunikasi antara teman Tuli dan orang dengar dengan mendeteksi gerakan tangan secara real-time. Sebuah aplikasi penerjemah bahasa isyarat SIBI yang menggunakan Computer Vision dan Deep Learning. Aplikasi ini membantu menjembatani komunikasi antara teman Tuli dan orang dengar dengan mendeteksi gerakan tangan secara real-time Sebuah aplikasi penerjemah bahasa isyarat SIBI yang menggunakan Computer Vision dan Deep Learning. Aplikasi ini membantu menjembatani komunikasi antara teman Tuli dan orang dengar dengan mendeteksi gerakan tangan secara real-time Sebuah aplikasi penerjemah bahasa isyarat SIBI yang menggunakan Computer Vision dan Deep Learning. Aplikasi ini membantu menjembatani komunikasi antara teman Tuli dan orang dengar dengan mendeteksi gerakan tangan secara real-timeSebuah aplikasi penerjemah bahasa isyarat SIBI yang menggunakan Computer Vision dan Deep Learning. Aplikasi ini membantu menjembatani komunikasi antara teman Tuli dan orang dengar dengan mendeteksi gerakan tangan secara real-time",
+    techStack: ["Python", "TensorFlow", "MediaPipe", "React", "OpenCV"],
   },
   {
-    company: "Innovative Co",
+    company: "BINUS University",
     year: "2021",
     title: "Light Saas Landing Page",
     results: [
@@ -30,10 +37,13 @@ const portfolioProjects = [
       { title: "Increased brand awareness by 15%" },
     ],
     link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    image: [lightSaasLandingPage],
+    description:
+      "Sebuah aplikasi penerjemah bahasa isyarat SIBI yang menggunakan Computer Vision dan Deep Learning. Aplikasi ini membantu menjembatani komunikasi antara teman Tuli dan orang dengar dengan mendeteksi gerakan tangan secara real-time.",
+    techStack: ["Python", "TensorFlow", "MediaPipe", "React", "OpenCV"],
   },
   {
-    company: "Quantum Dynamics",
+    company: "BINUS University",
     year: "2023",
     title: "AI Startup Landing Page",
     results: [
@@ -42,11 +52,16 @@ const portfolioProjects = [
       { title: "Increased mobile traffic by 35%" },
     ],
     link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    image: [aiStartupLandingPage],
+    description:
+      "Sebuah aplikasi penerjemah bahasa isyarat SIBI yang menggunakan Computer Vision dan Deep Learning. Aplikasi ini membantu menjembatani komunikasi antara teman Tuli dan orang dengar dengan mendeteksi gerakan tangan secara real-time.",
+    techStack: ["Python", "TensorFlow", "MediaPipe", "React", "OpenCV"],
   },
 ];
 
 export const ProjectsSection = () => {
+  const [selectedProject, setSelectedProject] = useState<any>(null);
+
   return (
     <section id="projects" className="py-20 lg:py-24">
       <div className="container">
@@ -77,22 +92,26 @@ export const ProjectsSection = () => {
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result) => (
-                      <li className="flex gap-2 text-sm md:text-base text-white/50">
+                      <li
+                        key={result.title}
+                        className="flex gap-2 text-sm md:text-base text-white/50"
+                      >
                         <CheckCircleIcon className="size-5 md:size-6" />
                         <span>{result.title}</span>
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
-                    <button className="bg-white text-gray-950 w-full h-12 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                      <span>View Project</span>
-                      <ArrowRightUpIcon className="size-4" />
-                    </button>
-                  </a>
+                  <button
+                    onClick={() => setSelectedProject(project)}
+                    className="bg-white text-gray-950 w-full h-12 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 cursor-pointer hover:bg-gray-200 transition shadow-lg hover:shadow-xl translate-y-0 hover:scale-[.97] duration-200"
+                  >
+                    <span>View Project Details</span>
+                    <ArrowRightUpIcon className="size-4" />
+                  </button>
                 </div>
                 <div className="relative">
                   <Image
-                    src={project.image}
+                    src={project.image[0]}
                     alt={project.title}
                     className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:h-full lg:absolute lg:w-auto lg:max-w-none"
                   />
@@ -102,6 +121,13 @@ export const ProjectsSection = () => {
           ))}
         </div>
       </div>
+      {/* 7. Render Modal Jika ada project yang dipilih */}
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </section>
   );
 };

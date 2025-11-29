@@ -19,4 +19,27 @@ html {
     .container {
         @apply lg:max-w-5xl
     }
+    .scrollbar-thin-elegant {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent; /* Firefox */
+  }
+  
+  /* Untuk Chrome, Edge, & Safari */
+  .scrollbar-thin-elegant::-webkit-scrollbar {
+    width: 6px; /* Lebar scrollbar */
+  }
+  
+  .scrollbar-thin-elegant::-webkit-scrollbar-track {
+    background: transparent; /* Background track transparan */
+    margin-block: 1rem; /* Memberi jarak sedikit di atas/bawah track */
+  }
+  
+  .scrollbar-thin-elegant::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.1); /* Warna thumb redup */
+    border-radius: 9999px; /* Rounded full */
+  }
+
+  .scrollbar-thin-elegant::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Lebih terang saat dihover */
+  }
 }
