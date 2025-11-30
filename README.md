@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 WILBERT WINARDI | PERSONAL PORTFOLIO
 
-## Getting Started
+**[View Live Site Here](wilbertwinardi.site)**
 
-First, run the development server:
+The official portfolio of **Wilbert Winardi**, a Computer Science student at BINUS University. This project stands at the intersection of **Artificial Intelligence** and **Modern Web Engineering**, designed to showcase the seamless integration of intelligent backend solutions with high-performance, intuitive frontend interfaces.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🖼️ Project Showcase
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![[Home Page](https://wilbertwinardi.site/mainpage.png)]
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## ✨ Key Features
 
-## Learn More
+* **Immersive Project Modal:** Detailed project insights—including descriptions, tech stacks, and galleries—are presented in a highly interactive, responsive modal pop-up.
+* **Advanced Image Carousel:** A fully custom image slider featuring:
+    * Bi-directional smooth slide animations.
+    * Touch & Swipe gesture support for mobile devices.
+    * Smart "Pause-on-Hover/Touch" and "Manual Pause" logic for better accessibility.
+* **Modern Architecture:** Built on the robust **Next.js 14 (App Router)** framework, ensuring server-side rendering benefits and optimal performance.
+* **Type-Safe Codebase:** developed entirely in **TypeScript** to ensure code reliability, scalability, and maintainability.
+* **Responsive & Adaptive:** A mobile-first design philosophy implemented with **Tailwind CSS**, ensuring a flawless experience across all device sizes.
+* **SEO Optimized:** Pre-configured with dynamic `sitemap.ts` and `robots.ts` for maximum search engine visibility.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💻 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+| Category | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Framework** | Next.js 14 (App Router), React | Building a high-performance, server-rendered UI. |
+| **Styling** | Tailwind CSS | Rapid, utility-first styling for a responsive design system. |
+| **Animation** | Framer Motion | Creating complex, fluid animations (modals, carousel, navigation). |
+| **Language** | TypeScript | Ensuring strict type-checking and robust code quality. |
+| **Deployment** | Vercel | CI/CD pipeline and global edge network hosting. |
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🔗 Author & Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* **Author:** Wilbert Winardi
+* **Institution:** BINUS University (Computer Science)
+* **Email:** [wilbertwinardi@gmail.com]
+* **LinkedIn:** [(https://www.linkedin.com/in/wilbertwinardi/)]
+* **GitHub:** [(https://github.com/WilbertWinardi)]
+---
+
+© 2025 Wilbert Winardi. All Rights Reserved.
