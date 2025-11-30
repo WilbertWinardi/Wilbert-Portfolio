@@ -3,7 +3,7 @@
 import Image from "next/image";
 import ArrowRightUpIcon from "@/assets/icons/arrow-up-right.svg";
 import { Card } from "@/components/Card";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ChevronRightIcon from "@/assets/icons/chevronright.svg";
 import ChevronLeftIcon from "@/assets/icons/chevronleft.svg";
@@ -62,13 +62,16 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
     setPage([0, 0]);
   }, [project?.image, project?.title]);
 
-  const paginate = (newDirection: number) => {
-    if (images.length === 0) return;
-    let newIndex = currentImageIndex + newDirection;
-    if (newIndex >= images.length) newIndex = 0;
-    if (newIndex < 0) newIndex = images.length - 1;
-    setPage([newIndex, newDirection]);
-  };
+  const paginate = useCallback(
+    (newDirection: number) => {
+      if (images.length === 0) return;
+      let newIndex = currentImageIndex + newDirection;
+      if (newIndex >= images.length) newIndex = 0;
+      if (newIndex < 0) newIndex = images.length - 1;
+      setPage([newIndex, newDirection]);
+    },
+    [images.length, currentImageIndex]
+  );
 
   useEffect(() => {
     if (intervalRef.current) clearInterval(intervalRef.current);
@@ -82,7 +85,7 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [isHovered, isManualPaused, images.length, currentImageIndex]);
+  }, [isHovered, isManualPaused, images.length, currentImageIndex, paginate]);
 
   if (!project) return null;
 

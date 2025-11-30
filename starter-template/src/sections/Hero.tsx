@@ -114,18 +114,16 @@ export const HeroSection = () => {
             <div className="bg-green-500 size-2.5 rounded-full relative">
               <div className="bg-green-500 rounded-full absolute inset-0 animate-ping-large"></div>
             </div>
-            <div className="text-sm font-medium">
-              Available for new projects
-            </div>
+            <div className="text-sm font-medium">Available for work</div>
           </div>
         </div>
         <div className="max-w-lg mx-auto">
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-4 tracking-wide">
-            Hi, I'm Wilbert Winardi
+            I&apos;m Wilbert Winardi
           </h1>
           <p className="mt-4 text-center text-white/60 md:text-lg">
-            Computer Science student at BINUS University with interests in
-            Artificial Intelligence, Web Development, and Data Analytics.
+            A Computer Science student at BINUS University passionate about
+            Artificial Intelligence and Web Development.
           </p>
         </div>
         <div className="flex flex-col items-center mt-8 gap-4 md:flex-row justify-center">
@@ -135,19 +133,13 @@ export const HeroSection = () => {
               <ArrowDown className="size-4 group-hover:animate-bounce" />
             </button>
           </a>
-          <a
-            href="/CVWilbert.pdf"
-            target="_blank"
-            rel="noopener noreferrer" 
-          >
-            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl group relative overflow-hidden hover:shadow-[0_0_25px_rgba(110,231,183,0.4)] hover:border-emerald-300 transition-all duration-300 active:scale-95">
-              <div className="absolute inset-0 bg-gradient-to-r from-emerald-300/10 via-emerald-300/20 to-emerald-300/30 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-              <span className="inline-block group-hover:rotate-12 transition-transform duration-200 relative z-10">
+          <a href="/CVWilbert.pdf" target="_blank" rel="noopener noreferrer">
+            <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl group relative overflow-hidden hover:shadow-[0_0_25px_rgba(2,132,199,0.6)] hover:border-sky-600 transition-all duration-300 active:scale-95">
+              <div className="absolute inset-0 bg-gradient-to-r from-sky-200/10 via-sky-300/20 to-sky-400/30 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              <span className="inline-block group-hover:animate-bounce transition-transform duration-200 relative z-10">
                 ✨
               </span>
-              <span className="font-semibold relative z-10">
-                View CV Here
-              </span>
+              <span className="font-semibold relative z-10">View CV Here</span>
             </button>
           </a>
         </div>
