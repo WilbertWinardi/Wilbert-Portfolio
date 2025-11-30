@@ -11,9 +11,9 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "Wilbert Winardi | Computer Science Student at BINUS University",
+  title: "Wilbert Winardi",
   description:
-    "Portfolio of Wilbert Winardi, a Computer Science student at BINUS University specializing in Artificial Intelligence, and Web Development.",
+    "Wilbert Winardi's Personal Portfolio, a third-year Computer Science student at BINUS University specializing in Artificial Intelligence and Web Development.",
   keywords: [
     "Wilbert Winardi",
     "Binus University",
