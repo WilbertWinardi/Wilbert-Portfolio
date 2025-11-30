@@ -8,7 +8,7 @@ The official portfolio of **Wilbert Winardi**, a Computer Science student at BIN
 
 ## 🖼️ Project Showcase
 
-![[Home Page](https://wilbertwinardi.site/mainpage.png)]
+[Home Page Screenshoot](https://wilbertwinardi.site/mainpage.png)
 
 ## ✨ Key Features
 
@@ -40,9 +40,9 @@ The official portfolio of **Wilbert Winardi**, a Computer Science student at BIN
 
 * **Author:** Wilbert Winardi
 * **Institution:** BINUS University (Computer Science)
-* **Email:** [wilbertwinardi@gmail.com]
-* **LinkedIn:** [(https://www.linkedin.com/in/wilbertwinardi/)]
-* **GitHub:** [(https://github.com/WilbertWinardi)]
+* **Email:** wilbertwinardi@gmail.com
+* **LinkedIn:** https://www.linkedin.com/in/wilbertwinardi/
+* **GitHub:** https://github.com/WilbertWinardi
 ---
 
 © 2025 Wilbert Winardi. All Rights Reserved.
