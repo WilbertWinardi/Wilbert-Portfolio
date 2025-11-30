@@ -133,7 +133,11 @@ export const HeroSection = () => {
               <ArrowDown className="size-4 group-hover:animate-bounce" />
             </button>
           </a>
-          <a href="/CVWilbert.pdf" target="_blank" rel="noopener noreferrer">
+          <a
+            href="/CVWilbertWinardi.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 px-6 h-12 rounded-xl group relative overflow-hidden hover:shadow-[0_0_25px_rgba(2,132,199,0.6)] hover:border-sky-600 transition-all duration-300 active:scale-95">
               <div className="absolute inset-0 bg-gradient-to-r from-sky-200/10 via-sky-300/20 to-sky-400/30 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               <span className="inline-block group-hover:animate-bounce transition-transform duration-200 relative z-10">

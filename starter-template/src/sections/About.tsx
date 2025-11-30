@@ -14,6 +14,10 @@ import PythonIcon from "@/assets/icons/python.svg";
 import JavaIcon from "@/assets/icons/java.svg";
 import VSCodeIcon from "@/assets/icons/vscode.svg";
 import TailwindIcon from "@/assets/icons/tailwind.svg";
+import NextJSIcon from "@/assets/icons/nextjs.svg";
+import VercelIcon from "@/assets/icons/vercel.svg";
+import ChatgptIcon from "@/assets/icons/chatgpt.svg";
+import GeminiIcon from "@/assets/icons/gemini.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { CardHeader } from "@/components/CardHeader";
@@ -33,6 +37,10 @@ export const toolboxItems = [
   {
     title: "CSS3",
     iconType: CSSIcon,
+  },
+  {
+    title: "NextJS",
+    iconType: NextJSIcon,
   },
   {
     title: "React",
@@ -63,8 +71,20 @@ export const toolboxItems = [
     iconType: GithubIcon,
   },
   {
+    title: "Vercel",
+    iconType: VercelIcon,
+  },
+  {
     title: "VSCode",
     iconType: VSCodeIcon,
+  },
+  {
+    title: "ChatGPT",
+    iconType: ChatgptIcon,
+  },
+  {
+    title: "Gemini",
+    iconType: GeminiIcon,
   },
 ];
 
