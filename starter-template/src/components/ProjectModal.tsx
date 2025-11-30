@@ -181,10 +181,12 @@ export const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
                     >
                       <Image
                         src={images[currentImageIndex]}
-                        alt={`${project.title} screenshot`}
+                        alt={project.title}
                         fill
                         className="object-fill pointer-events-none"
                         draggable={false}
+                        placeholder="blur"
+                        priority={true}
                       />
                     </motion.div>
                   )}
