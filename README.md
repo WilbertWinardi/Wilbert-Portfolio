@@ -8,7 +8,7 @@ The official portfolio of **Wilbert Winardi**, a Computer Science student at BIN
 
 ## 🖼️ Project Showcase
 
-[Home Page Screenshoot](https://wilbertwinardi.site/mainpage.png)
+![Home Page Screenshoot](https://wilbertwinardi.site/mainpage.png)
 
 ## ✨ Key Features
 
