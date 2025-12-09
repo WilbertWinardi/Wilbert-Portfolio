@@ -47,10 +47,11 @@ import BNMC_7 from "@/assets/images/BNMC_7.jpg";
 import BNMC_8 from "@/assets/images/BNMC_8.jpg";
 import BNMC_9 from "@/assets/images/BNMC_9.jpg";
 import NLP_Cover from "@/assets/images/NLP_Cover.png";
-import NLP_1 from "@/assets/images/NLP_1.jpg";
+import NLP_1 from "@/assets/images/NLP_1.png";
 import NLP_2 from "@/assets/images/NLP_2.png";
 import NLP_3 from "@/assets/images/NLP_3.png";
 import NLP_4 from "@/assets/images/NLP_4.png";
+import NLP_5 from "@/assets/images/NLP_5.jpg";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowRightUpIcon from "@/assets/icons/arrow-up-right.svg";
@@ -114,10 +115,10 @@ const portfolioProjects = [
       { title: "Achieved ~90% Accuracy" },
     ],
     link: "https://github.com/WilbertWinardi/News-Sentiment-Analysis",
-    image: [NLP_Cover, NLP_1, NLP_2, NLP_3, NLP_4],
+    image: [NLP_Cover, NLP_1, NLP_2, NLP_3, NLP_4, NLP_5],
     description:
       "This project is a comparative study leveraging Transformer-based Deep Learning architectures for News Sentiment Analysis. The primary objective was to build an automated classification system capable of predicting sentiment (Positive, Neutral, Negative) from news article summaries. Beyond standard accuracy metrics, this research critically evaluated computational efficiency and training time to identify the most optimal and scalable model for real-world deployment.",
-    techStack: ["Python, Pytorch, Scikit-learn, Hugging Face Transformers"],
+    techStack: ["Python", "Pytorch", "Scikit-learn", "Hugging Face Transformers"],
   },
   {
     company: "BINUS University",
