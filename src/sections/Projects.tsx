@@ -7,45 +7,50 @@ import HSI_2 from "@/assets/images/HSI_1.jpg";
 import HSI_3 from "@/assets/images/HSI_2.jpg";
 import HSI_4 from "@/assets/images/HSI_3.png";
 import HSI_5 from "@/assets/images/HSI_4.png";
-import WC_Cover from "@/assets/images/WC_Cover.png"
-import WC_1 from "@/assets/images/WC_1.png"
-import WC_2 from "@/assets/images/WC_2.png"
-import WC_3 from "@/assets/images/WC_3.png"
-import WC_4 from "@/assets/images/WC_4.png"
-import WC_5 from "@/assets/images/WC_5.png"
-import WC_6 from "@/assets/images/WC_6.png"
-import WC_7 from "@/assets/images/WC_7.png"
-import WC_8 from "@/assets/images/WC_8.png"
-import WC_9 from "@/assets/images/WC_9.png"
-import WC_10 from "@/assets/images/WC_10.png"
-import WC_11 from "@/assets/images/WC_11.png"
-import WC_12 from "@/assets/images/WC_12.png"
-import CTZ_Cover from '@/assets/images/CTZ_Cover.png'
-import CTZ_1 from '@/assets/images/CTZ_1.png'
-import CTZ_2 from '@/assets/images/CTZ_2.png'
-import CTZ_3 from '@/assets/images/CTZ_3.png'
-import CTZ_4 from '@/assets/images/CTZ_4.png'
-import CTZ_5 from '@/assets/images/CTZ_5.png'
-import CN_Cover from '@/assets/images/CN_Cover.png'
-import CN_1 from '@/assets/images/CN_1.png'
-import CN_2 from '@/assets/images/CN_2.png'
-import CN_3 from '@/assets/images/CN_3.png'
-import CN_4 from '@/assets/images/CN_4.png'
-import CN_5 from '@/assets/images/CN_5.png'
-import CN_6 from '@/assets/images/CN_6.png'
-import CN_7 from '@/assets/images/CN_7.png'
-import CN_8 from '@/assets/images/CN_8.png'
-import CN_9 from '@/assets/images/CN_9.png'
-import BNMC_Cover from '@/assets/images/BNMC_Cover.png'
-import BNMC_1 from '@/assets/images/BNMC_1.jpg'
-import BNMC_2 from '@/assets/images/BNMC_2.jpg'
-import BNMC_3 from '@/assets/images/BNMC_3.jpg'
-import BNMC_4 from '@/assets/images/BNMC_4.jpg'
-import BNMC_5 from '@/assets/images/BNMC_5.jpg'
-import BNMC_6 from '@/assets/images/BNMC_6.jpg'
-import BNMC_7 from '@/assets/images/BNMC_7.jpg'
-import BNMC_8 from '@/assets/images/BNMC_8.jpg'
-import BNMC_9 from '@/assets/images/BNMC_9.jpg'
+import WC_Cover from "@/assets/images/WC_Cover.png";
+import WC_1 from "@/assets/images/WC_1.png";
+import WC_2 from "@/assets/images/WC_2.png";
+import WC_3 from "@/assets/images/WC_3.png";
+import WC_4 from "@/assets/images/WC_4.png";
+import WC_5 from "@/assets/images/WC_5.png";
+import WC_6 from "@/assets/images/WC_6.png";
+import WC_7 from "@/assets/images/WC_7.png";
+import WC_8 from "@/assets/images/WC_8.png";
+import WC_9 from "@/assets/images/WC_9.png";
+import WC_10 from "@/assets/images/WC_10.png";
+import WC_11 from "@/assets/images/WC_11.png";
+import WC_12 from "@/assets/images/WC_12.png";
+import CTZ_Cover from "@/assets/images/CTZ_Cover.png";
+import CTZ_1 from "@/assets/images/CTZ_1.png";
+import CTZ_2 from "@/assets/images/CTZ_2.png";
+import CTZ_3 from "@/assets/images/CTZ_3.png";
+import CTZ_4 from "@/assets/images/CTZ_4.png";
+import CTZ_5 from "@/assets/images/CTZ_5.png";
+import CN_Cover from "@/assets/images/CN_Cover.png";
+import CN_1 from "@/assets/images/CN_1.png";
+import CN_2 from "@/assets/images/CN_2.png";
+import CN_3 from "@/assets/images/CN_3.png";
+import CN_4 from "@/assets/images/CN_4.png";
+import CN_5 from "@/assets/images/CN_5.png";
+import CN_6 from "@/assets/images/CN_6.png";
+import CN_7 from "@/assets/images/CN_7.png";
+import CN_8 from "@/assets/images/CN_8.png";
+import CN_9 from "@/assets/images/CN_9.png";
+import BNMC_Cover from "@/assets/images/BNMC_Cover.png";
+import BNMC_1 from "@/assets/images/BNMC_1.jpg";
+import BNMC_2 from "@/assets/images/BNMC_2.jpg";
+import BNMC_3 from "@/assets/images/BNMC_3.jpg";
+import BNMC_4 from "@/assets/images/BNMC_4.jpg";
+import BNMC_5 from "@/assets/images/BNMC_5.jpg";
+import BNMC_6 from "@/assets/images/BNMC_6.jpg";
+import BNMC_7 from "@/assets/images/BNMC_7.jpg";
+import BNMC_8 from "@/assets/images/BNMC_8.jpg";
+import BNMC_9 from "@/assets/images/BNMC_9.jpg";
+import NLP_Cover from "@/assets/images/NLP_Cover.png";
+import NLP_1 from "@/assets/images/NLP_1.jpg";
+import NLP_2 from "@/assets/images/NLP_2.png";
+import NLP_3 from "@/assets/images/NLP_3.png";
+import NLP_4 from "@/assets/images/NLP_4.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowRightUpIcon from "@/assets/icons/arrow-up-right.svg";
@@ -98,6 +103,21 @@ const portfolioProjects = [
     description:
       "My team, consisting of Wilbert, Clayton, and Evan, created a real-time weather prediction website using machine learning classification. First, we collected data from the OpenWeatherMap API. Second, we were able to select which features to use for training. Third, we trained using random forest or logistic regression. Finally, we can make predictions using manual prediction (manual data input) or real-time prediction using data from the OpenWeatherMap API. This project is an assignment for the Machine Learning course in the fourth semester. We developed the logic using Python and the interface using Streamlit.",
     techStack: ["Python", "Streamlit", "Scikit-learn"],
+  },
+  {
+    company: "BINUS University",
+    year: "2025",
+    title: "News Sentiment Analysis",
+    results: [
+      { title: "Benchmarked 4 SOTA Transformers" },
+      { title: "Superior Efficiency via ELECTRA" },
+      { title: "Achieved ~90% Accuracy" },
+    ],
+    link: "https://github.com/WilbertWinardi/News-Sentiment-Analysis",
+    image: [NLP_Cover, NLP_1, NLP_2, NLP_3, NLP_4],
+    description:
+      "This project is a comparative study leveraging Transformer-based Deep Learning architectures for News Sentiment Analysis. The primary objective was to build an automated classification system capable of predicting sentiment (Positive, Neutral, Negative) from news article summaries. Beyond standard accuracy metrics, this research critically evaluated computational efficiency and training time to identify the most optimal and scalable model for real-world deployment.",
+    techStack: ["Python, Pytorch, Scikit-learn, Hugging Face Transformers"],
   },
   {
     company: "BINUS University",
